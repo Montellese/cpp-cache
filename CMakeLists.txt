@@ -37,14 +37,16 @@ set(HEADERS_GENERAL ${INCLUDE_PATH}/cache.h
                     ${INCLUDE_PATH}/lifo-cache.h
                     ${INCLUDE_PATH}/lru-cache.h
                     ${INCLUDE_PATH}/mru-cache.h
-                    ${INCLUDE_PATH}/random-cache.h)
+                    ${INCLUDE_PATH}/random-cache.h
+                    ${INCLUDE_PATH}/ttl-cache.h)
 
 set(HEADERS_POLICY ${INCLUDE_PATH_POLICY}/fifo.h
                    ${INCLUDE_PATH_POLICY}/lifo.h
                    ${INCLUDE_PATH_POLICY}/lru.h
                    ${INCLUDE_PATH_POLICY}/mru.h
                    ${INCLUDE_PATH_POLICY}/none.h
-                   ${INCLUDE_PATH_POLICY}/random.h)
+                   ${INCLUDE_PATH_POLICY}/random.h
+                   ${INCLUDE_PATH_POLICY}/ttl.h)
 
 set(HEADERS_STORAGE ${INCLUDE_PATH_STORAGE}/map.h)
 
