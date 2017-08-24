@@ -34,6 +34,7 @@ set(INCLUDE_PATH_STORAGE ${PROJECT_SOURCE_DIR}/${INCLUDE_DIR}/${PROJECT_NAME}/st
 
 set(HEADERS_GENERAL ${INCLUDE_PATH}/cache.h
                     ${INCLUDE_PATH}/fifo-cache.h
+                    ${INCLUDE_PATH}/lfu-cache.h
                     ${INCLUDE_PATH}/lifo-cache.h
                     ${INCLUDE_PATH}/lru-cache.h
                     ${INCLUDE_PATH}/mru-cache.h
@@ -41,6 +42,7 @@ set(HEADERS_GENERAL ${INCLUDE_PATH}/cache.h
                     ${INCLUDE_PATH}/ttl-cache.h)
 
 set(HEADERS_POLICY ${INCLUDE_PATH_POLICY}/fifo.h
+                   ${INCLUDE_PATH_POLICY}/lfu.h
                    ${INCLUDE_PATH_POLICY}/lifo.h
                    ${INCLUDE_PATH_POLICY}/lru.h
                    ${INCLUDE_PATH_POLICY}/mru.h
