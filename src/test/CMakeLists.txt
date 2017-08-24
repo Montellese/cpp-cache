@@ -1,6 +1,13 @@
 include_directories(".")
 
-set(SOURCES main.cpp)
+set(SOURCES main.cpp
+            fifo.cpp
+            lifo.cpp
+            lru.cpp
+            lru-ttl.cpp
+            mru.cpp
+            random.cpp
+            ttl.cpp)
 
 add_executable(${PROJECT_NAME}-test ${HEADERS} ${SOURCES})
 target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
