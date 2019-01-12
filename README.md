@@ -42,10 +42,21 @@ Element 1: one
 Element 1 not cached anymore
 ```
 
+----------
+### Table of Contents ###
+*   [Requirements](#requirements)
+    *   [Buildsystem](#buildsystem)
+*   [Features](#features)
+    *   [Type-safety](#type-safety)
+    *   [Caching policy](#caching-policy)
+    *   [Storage policy](#storage-policy)
+    *   [Threading policy](#threading-policy)
+*   [The Future](#the-future)
+
 ### Requirements ###
 The only thing required to use cpp-cache is a C++11 compliant compiler.
 
-### Buildsystem ###
+#### Buildsystem ####
 To be able to run the tests provided with cpp-cache [CMake](https://cmake.org/) 3.1 or newer is required. Run the following commands to build the tests and execute them:
 ```bash
 # mkdir build
@@ -56,11 +67,6 @@ To be able to run the tests provided with cpp-cache [CMake](https://cmake.org/) 
 ```
 
 ### Features ###
-*   [Type-safety](#type-safety)
-*   [Caching policy](#caching-policy)
-*   [Storage policy](#storage-policy)
-*   [Threading policy](#threading-policy)
-
 #### Type-safety ####
 Thanks to C++11's templates cpp-cache calls are completely type-safe. It is not possible to store a value with a mismatching type in a cache.
 
