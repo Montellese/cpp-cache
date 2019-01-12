@@ -62,9 +62,22 @@ To be able to run the tests provided with cpp-cache [CMake](https://cmake.org/) 
 # mkdir build
 # cd build
 # cmake ..
-# cmake --build
+# cmake --build .
 # ctest -C Debug
 ```
+
+#### Compilers ####
+cpp-cache has been explictely tested with the following compilers:
+*   gcc
+    *   5.4.0
+    *   5.5.0
+*   clang
+    *   7.0.0
+*   Apple LLVM
+    *   9.1.0
+*   MSVC
+    *   Visual Studio 2015 (v140 / 1900)
+    *   Visual Studio 2017 (v141 / 1916)
 
 ### Features ###
 #### Type-safety ####
