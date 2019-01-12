@@ -1,0 +1,37 @@
+# Travis CI integration
+
+language: cpp
+
+notifications:
+  email: false
+
+matrix:
+  include:
+    - os: linux
+      dist: xenial
+      env: CONFIG=Debug
+      compiler: gcc
+    - os: linux
+      dist: xenial
+      env: CONFIG=Release
+      compiler: gcc
+    - os: linux
+      dist: xenial
+      env: CONFIG=Debug
+      compiler: clang
+    - os: linux
+      dist: xenial
+      env: CONFIG=Release
+      compiler: clang
+    - os: osx
+      env: CONFIG=Debug
+    - os: osx
+      env: CONFIG=Release
+
+before_script:
+  - mkdir build
+  - cd build
+  - cmake -DCMAKE_BUILD_TYPE=${CONFIG} ..
+
+script:
+  - make -j4 && make test

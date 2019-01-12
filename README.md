@@ -1,5 +1,5 @@
 # cpp-cache #
-![License](https://img.shields.io/github/license/Montellese/cpp-cache.svg) ![C++11](https://img.shields.io/badge/C%2B%2B-11-blue.svg)
+[![Travis CI Build Status](https://travis-ci.org/Montellese/cpp-cache.svg?branch=master)](https://travis-ci.org/Montellese/cpp-cache) ![License](https://img.shields.io/github/license/Montellese/cpp-cache.svg) ![C++11](https://img.shields.io/badge/C%2B%2B-11-blue.svg)
 
 cpp-cache is a header-only pure C++11 library providing an interface and some implementations for generic caching. Using it is as easy as
 ```cpp
